@@ -1,0 +1,47 @@
+/* CSS declarations go here */
+
+.textblob {
+    width: 1200px;
+}
+
+.textblob textarea {
+    width: 1186px;
+    height: 200px;
+    border: 5px solid #c3dff6;
+    font-family: Tahoma, sans-serif;
+}
+
+.textblob .textblob_title {
+    width: 1200px;
+    height: 36px;
+    background-color: #c3dff6;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: auto;
+}
+
+.textblob .textblob_title .txt_textblob_title {
+    margin-left: 10px;
+    margin-top:13px;
+    font-family: sans-serif;
+    font-size: 16pt;
+    color: #ffffff;
+}
+
+.textblob .textblob_title .btn_textblob_delete {
+    float: right;
+    margin-right: 7px;
+    margin-top: 7px;
+}
+
+#add_widget {
+    padding: 20px;
+}
+
+#add_widget #txt_add_widget {
+    font-size: 16pt;
+    margin-left: 10px;
+    /*margin-top: 5px;*/
+    /*padding-bottom: 50px;*/
+    /*margin-bottom: 50px;*/
+}
