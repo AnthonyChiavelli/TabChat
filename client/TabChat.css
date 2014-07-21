@@ -1,17 +1,17 @@
 /* CSS declarations go here */
 
-.textblob {
+.widget {
     width: 1200px;
 }
 
-.textblob textarea {
+.widget textarea {
     width: 1186px;
     height: 200px;
     border: 5px solid #c3dff6;
     font-family: Tahoma, sans-serif;
 }
 
-.textblob .textblob_title {
+.widget .widget_title {
     width: 1200px;
     height: 36px;
     background-color: #c3dff6;
@@ -20,7 +20,7 @@
     overflow: auto;
 }
 
-.textblob .textblob_title .txt_textblob_title {
+.widget .widget_title .txt_widget_title {
     margin-left: 10px;
     margin-top:13px;
     font-family: sans-serif;
@@ -28,7 +28,7 @@
     color: #ffffff;
 }
 
-.textblob .textblob_title .btn_textblob_delete {
+.widget .widget_title .widget_delete #btn_widget_delete {
     float: right;
     margin-right: 7px;
     margin-top: 7px;

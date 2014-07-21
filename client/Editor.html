@@ -1,27 +1,27 @@
 <template name="editor">
 
   <ul id="widget_layout">
-      {{> text_blob}}
+      {{> widget}}
   </ul>
 
 
   <div id="add_widget">
-    <input type="image" id="btn_add_text_blob" src="img/ic_add_widget.jpg"> <span id="txt_add_widget">Add TextBlob named</span>
-    <input id="textblob_name_box">
+    <input type="image" id="btn_add_widget" src="img/ic_add_widget.jpg"> <span id="txt_add_widget">Add widget</span>
+    <input id="input_widget_title">
   </div>
 
 
 </template>
 
-<template name="text_blob">
-  {{ #each text_blobs}}
+<template name="widget">
+  {{ #each widgets}}
   <li>
-    <div class="textblob">
-      <div class="textblob_title">
-        <span class="txt_textblob_title">{{ title }}</span>
-        <span class="btn_textblob_delete"><input type="image" id="btn_textblob_remove" name="{{ title }}" src="img/close.png"></span>
+    <div class="widget">
+      <div class="widget_title">
+        <span class="txt_widget_title">{{ title }}</span>
+        <span class="widget_delete"><input type="image" id="btn_widget_delete" name="{{ title }}" src="img/close.png"></span>
       </div>
-      <textarea></textarea>
+      {{{ src }}}
     </div>
   </li>
   {{ /each }}
