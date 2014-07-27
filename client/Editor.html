@@ -1,14 +1,31 @@
 <template name="editor">
 
+  <div class="add_widget">
+    <input type="image" id="btn_add_textblob" src="img/ic_add_widget.jpg"> <span class="txt_add_widget">Add TextBlob with title:</span>
+    <input id="input_textblob_title">
+  </div>
+
+  <div class="add_widget">
+    <input type="image" id="btn_add_image" src="img/ic_add_widget.jpg"> <span class="txt_add_widget">Add Image with URL:</span>
+    <input id="input_image_url">
+  </div>
+
+  <div class="add_widget">
+    <input type="image" id="btn_add_video" src="img/ic_add_widget.jpg"> <span class="txt_add_widget">Add video with URL:</span>
+    <input id="input_video_url">
+  </div>
+
+  <div class="add_widget">
+    <input type="image" id="btn_add_whiteboard" src="img/ic_add_widget.jpg"> <span class="txt_add_widget">Add whiteboard with title:</span>
+    <input id="input_whiteboard_title">
+  </div>
+
+
   <ul id="widget_layout">
       {{> widget}}
   </ul>
 
 
-  <div id="add_widget">
-    <input type="image" id="btn_add_widget" src="img/ic_add_widget.jpg"> <span id="txt_add_widget">Add widget</span>
-    <input id="input_widget_title">
-  </div>
 
 
 </template>
@@ -18,7 +35,7 @@
   <li>
     <div class="widget">
       <div class="widget_title">
-        <span class="txt_widget_title">{{ title }}</span>
+        <span class="txt_widget_title">{{ data.title }}</span>
         <span class="widget_delete"><input type="image" id="btn_widget_delete" name="{{ title }}" src="img/close.png"></span>
       </div>
       {{{ src }}}

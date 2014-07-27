@@ -38,7 +38,7 @@
     padding: 20px;
 }
 
-#add_widget #txt_add_widget {
+#add_widget .txt_add_widget {
     font-size: 16pt;
     margin-left: 10px;
     /*margin-top: 5px;*/
